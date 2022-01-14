@@ -1,5 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%;
+  height: 100%; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +20,106 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.itemWrap {
+  height: 45vh;
+  margin: 2vh 2vw;
+}
+
+.itemWrap .card {
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.itemWrap .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.itemWrap .card-title {
+  text-align: center;
+  height: 5vh;
+}
+
+.itemWrap img {
+  height: 25vh;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.itemWrap .card-text {
+  max-height: 250px;
+}
+
+.cartWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 80vh;
+}
+
+.cartWrap img {
+  width: 5vw;
+  border-radius: 10px;
+}
+
+.cartWrap .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartItemWrap {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40vw;
+  border-radius: 10px;
+  margin-bottom: 1.25rem;
+}
+
+.cartItemWrap .card-title {
+  text-align: center;
+  margin-left: 2rem;
+  width: 20vw;
+}
+
+.cartItemWrap .btn {
+  width: 3rem;
+  margin: .5rem 1rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+}
+
+.cartWrap .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
